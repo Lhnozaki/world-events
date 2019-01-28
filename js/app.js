@@ -55,7 +55,11 @@ function MJ (){
 // 6. The American Civil War
 // Add an event listener to the div element id of 'freedom' and create a function to remove all instances of 'corn' in the content.
 
+freedom.addEventListener('click', mase);
 
+function mase(){
+    freedom.innerHTML = freedom.innerHTML.replace(/corn/g, '');
+}
 
 // 7. The Renaissance
 // Add an event listener to the div element id of 'rebirth' and create a function to remove all the lowercase and uppercase z's in the content. 
