@@ -64,7 +64,11 @@ function mase(){
 // 7. The Renaissance
 // Add an event listener to the div element id of 'rebirth' and create a function to remove all the lowercase and uppercase z's in the content. 
 
+rebirth.addEventListener('click', noMoreZs);
 
+function noMoreZs(){
+    rebirth.innerHTML = rebirth.innerHTML.replace(/z/gi, '');
+}
 
 // 8. the Gutenberg Printing Press
 // Add an event listener to the h3 element id of 'showBooks' and create a function to display a random book title from the classics array in the div element of 'mustRead'.
