@@ -117,3 +117,29 @@ function weird(){
 // Final Boss
 // Add event listeners for the thumbs up and thumbs down images that will count the number of times the thumb has been clicked on. 
 
+var voting = document.getElementsByClassName('fas fa-thumbs-up');
+
+for (i=0;i<voting.length;i++){
+    voting[i].addEventListener('click', counter);
+}
+
+function counter(){
+    var x = this.querySelectorAll('.up')[0];
+    //var y = this.querySelectorAll('.down')[0];
+    x.innerHTML++;
+    //y.innerHTML++;
+}
+
+var voting2 = document.getElementsByClassName('fas fa-thumbs-down');
+
+for (i=0;i<voting.length;i++){
+    voting2[i].addEventListener('click', counter2);
+}
+
+function counter2(){
+    //var x = this.querySelectorAll('.up')[0];
+    var y = this.querySelectorAll('.down')[0];
+    //x.innerHTML++;
+    y.innerHTML++;
+}
+
